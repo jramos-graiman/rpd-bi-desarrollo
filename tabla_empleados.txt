@@ -1,0 +1,29 @@
+CREATE TABLE [dbo].[THMedico](
+    [EmpresaId] [int] NOT NULL,
+    [RucEmpresa] [varchar](15) NULL,
+    [Empresa] [varchar](200) NULL,
+    [EstadoEmpleado] [varchar](15) NULL,
+    [Identificacion] [varchar](15) NOT NULL,
+    [Codigo] [varchar](15) NULL,
+    [Empleado] [varchar](150) NULL,
+    [CargoCodigo] [varchar](15) NULL,
+    [Cargo] [varchar](150) NULL,
+    [DepartamentoCodigo] [varchar](15) NULL,
+    [Departamento] [varchar](150) NULL,
+    [FechaNacimiento] [varchar](25) NULL,
+    [EstadoCivil] [varchar](25) NULL,
+    [Genero] [varchar](15) NULL,
+    [TipoSangre] [varchar](10) NULL,
+    [CiudadResidencia] [varchar](30) NULL,
+    [ProvinciaResidencia] [varchar](30) NULL,
+    [PaisResidencia] [varchar](30) NULL,
+    [CallePrincipal] [varchar](200) NULL,
+    [FechaEmpleo] [varchar](30) NULL,
+    [TipoTelefono] [varchar](25) NULL,
+    [Telefono] [varchar](20) NULL,
+CONSTRAINT [PK_THMedico] PRIMARY KEY CLUSTERED
+(
+    [EmpresaId] ASC,
+    [Identificacion] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
