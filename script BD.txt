@@ -1,0 +1,14 @@
+SELECT a.sql_text,b.name,b.position,b.datatype_string,b.value_string
+FROM v$sql_bind_capture b,v$sqlarea a
+WHERE b.sql_id = '858xfqjb7hqya' AND b.sql_id = a.sql_id;
+
+select 'kill -9 ' || p.spid
+from v$session s, v$process p
+where p.addr = s.paddr and
+s.sid in(455) ;
+
+
+select 'kill -9 ' || p.spid
+from v$session s, v$process p
+where p.addr = s.paddr and
+s.sql_id = '858xfqjb7hqya';
